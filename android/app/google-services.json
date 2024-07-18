@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "851185775013",
+    "project_id": "istuddyproject",
+    "storage_bucket": "istuddyproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851185775013:android:49fd6abe9a4eddd3b7384c",
+        "android_client_info": {
+          "package_name": "com.mycompany.istuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7x1WPguQD_Z49ZOvRXSD3V1UbPZ81-Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
