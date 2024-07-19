@@ -25,8 +25,6 @@ export '/pages/basic6/numbers_numeracy/numbers_numeracy_widget.dart'
     show NumbersNumeracyWidget;
 export '/pages/basic6/basic6_quiz/basic6_quiz_widget.dart'
     show Basic6QuizWidget;
-export '/pages/basic6/fractions_decimals/fractions_decimals_widget.dart'
-    show FractionsDecimalsWidget;
 export '/pages/basic6/multiplication_division_b6/multiplication_division_b6_widget.dart'
     show MultiplicationDivisionB6Widget;
 export '/pages/basic6/ratio_proportion/ratio_proportion_widget.dart'
@@ -47,3 +45,14 @@ export '/pages/basic7/percentages_b7/percentages_b7_widget.dart'
     show PercentagesB7Widget;
 export '/pages/basic7/pure_percentage_b7/pure_percentage_b7_widget.dart'
     show PurePercentageB7Widget;
+export '/pages/basic7/patterns_algebra_b7/patterns_algebra_b7_widget.dart'
+    show PatternsAlgebraB7Widget;
+export '/pages/basic7/functions_b7/functions_b7_widget.dart'
+    show FunctionsB7Widget;
+export '/pages/basic7/basic7_quiz/basic7_quiz_widget.dart'
+    show Basic7QuizWidget;
+export '/pages/basic6/fractions_decimals/fractions_decimals_widget.dart'
+    show FractionsDecimalsWidget;
+export '/pages/basic5/money/money_widget.dart' show MoneyWidget;
+export '/pages/basic5/data_handling/data_handling_widget.dart'
+    show DataHandlingWidget;

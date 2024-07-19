@@ -435,8 +435,8 @@ class _FractionsWidgetState extends State<FractionsWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('Basic5Quiz');
                     },
                     text: 'Test your Knowledge',
                     options: FFButtonOptions(

@@ -67,6 +67,7 @@ dependencies:
   sqflite: 2.2.6
   stream_transform: 2.1.0
   timeago: 3.6.1
+  tutorial_coach_mark: 1.2.11
   url_launcher: 6.2.5
   url_launcher_android: 6.3.0
   url_launcher_ios: 6.2.5
@@ -87,11 +88,23 @@ dependency_overrides:
   uuid: ^4.0.0
 
 dev_dependencies:
+  flutter_launcher_icons: 0.13.1
   flutter_lints: 4.0.0
+  image: 4.0.17
   lints: 4.0.0
 
   flutter_test:
     sdk: flutter
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+  image_path: 'assets/images/app_launcher_icon.png'
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

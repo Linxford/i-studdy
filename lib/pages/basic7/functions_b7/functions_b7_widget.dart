@@ -4,26 +4,25 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'fractions_decimals_model.dart';
-export 'fractions_decimals_model.dart';
+import 'functions_b7_model.dart';
+export 'functions_b7_model.dart';
 
-class FractionsDecimalsWidget extends StatefulWidget {
-  const FractionsDecimalsWidget({super.key});
+class FunctionsB7Widget extends StatefulWidget {
+  const FunctionsB7Widget({super.key});
 
   @override
-  State<FractionsDecimalsWidget> createState() =>
-      _FractionsDecimalsWidgetState();
+  State<FunctionsB7Widget> createState() => _FunctionsB7WidgetState();
 }
 
-class _FractionsDecimalsWidgetState extends State<FractionsDecimalsWidget> {
-  late FractionsDecimalsModel _model;
+class _FunctionsB7WidgetState extends State<FunctionsB7Widget> {
+  late FunctionsB7Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FractionsDecimalsModel());
+    _model = createModel(context, () => FunctionsB7Model());
 
     _model.expandableExpandableController1 =
         ExpandableController(initialExpanded: false);
@@ -718,7 +717,7 @@ class _FractionsDecimalsWidgetState extends State<FractionsDecimalsWidget> {
                                       ),
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 0.0, 0.0, 0.0),
+                                            5.0, 0.0, 5.0, 0.0),
                                         child: Text(
                                           'Two functions, f and g, are said to be identical if\n\n(a) The domain of f = domain of g\n\n(b) The range of f = the range of g\n\n(c) f(x) = g(x) ∀ x ∈ Df & Dg\n\nFor example, f(x) = x\n\nSolution: f(x) = x is defined for all x\n\nBut\n\nis not defined of x = 0\nHence, it is identical for x ∈ R – {0}',
                                           style: FlutterFlowTheme.of(context)

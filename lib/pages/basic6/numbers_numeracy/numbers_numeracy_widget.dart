@@ -317,6 +317,24 @@ class _NumbersNumeracyWidgetState extends State<NumbersNumeracyWidget> {
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                     ),
+                                    child: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 1.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 5.0, 0.0),
+                                        child: Text(
+                                          'View Examples',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                   expanded: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -433,8 +451,8 @@ class _NumbersNumeracyWidgetState extends State<NumbersNumeracyWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('Basic7Quiz');
                     },
                     text: 'Test your Knowledge',
                     options: FFButtonOptions(

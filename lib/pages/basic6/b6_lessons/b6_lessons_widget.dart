@@ -153,9 +153,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Numbers and Numeration',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 195.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -184,9 +183,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                             text: ' Fraction and Decimals',
                             options: FFButtonOptions(
                               width: double.infinity,
-                              height: 40.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 190.0, 0.0),
+                              height: 50.0,
+                              padding: const EdgeInsets.all(0.0),
                               iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
@@ -212,36 +210,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Multiplication and Division',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 170.0, 0.0),
-                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                            elevation: 3.0,
-                            borderSide: const BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
-                            ),
-                            borderRadius: BorderRadius.circular(8.0),
-                          ),
-                        ),
-                        FFButtonWidget(
-                          onPressed: () async {
-                            context.pushNamed('Measurement');
-                          },
-                          text: 'Measurement, Geometry',
-                          options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 180.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -266,9 +236,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Ratio and Proportion',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 220.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -293,9 +262,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Percentages',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 266.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -320,9 +288,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Patterns and Algebra',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 206.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -347,9 +314,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Financial Mathematics',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 206.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
@@ -374,9 +340,8 @@ class _B6LessonsWidgetState extends State<B6LessonsWidget> {
                           },
                           text: 'Problem Solving',
                           options: FFButtonOptions(
-                            height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 250.0, 0.0),
+                            height: 50.0,
+                            padding: const EdgeInsets.all(0.0),
                             iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,

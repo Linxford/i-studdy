@@ -2,6 +2,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/walkthroughs/start.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart'
+    show TutorialCoachMark;
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -202,6 +205,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
+                    ).addWalkthrough(
+                      buttonWwpujil0,
+                      _model.startController,
                     ),
                   ),
                 ),
@@ -212,4 +218,15 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
       ),
     );
   }
+
+  TutorialCoachMark createPageWalkthrough(BuildContext context) =>
+      TutorialCoachMark(
+        targets: createWalkthroughTargets(context),
+        onFinish: () async {
+          safeSetState(() => _model.startController = null);
+        },
+        onSkip: () {
+          return true;
+        },
+      );
 }

@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'fractions_decimals_widget.dart' show FractionsDecimalsWidget;
+import 'patterns_algebra_b7_widget.dart' show PatternsAlgebraB7Widget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 
-class FractionsDecimalsModel extends FlutterFlowModel<FractionsDecimalsWidget> {
+class PatternsAlgebraB7Model extends FlutterFlowModel<PatternsAlgebraB7Widget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

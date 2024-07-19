@@ -152,9 +152,8 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       },
                       text: 'Numbers and Numeration',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 195.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -178,9 +177,8 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       },
                       text: 'Operations',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 280.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -204,35 +202,8 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       },
                       text: 'Fractions and Decimals',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 200.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: 'Measurement & Geometry',
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 170.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -256,9 +227,8 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       },
                       text: 'Ratio and Proportion',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 220.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -277,14 +247,13 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       ),
                     ),
                     FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed('Patterns_AlgebraB7');
                       },
-                      text: 'Patterns, Algebra, and Functions',
+                      text: 'Patterns & Algebra',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 110.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -302,21 +271,19 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       ),
                     ),
                     FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed('FunctionsB7');
                       },
-                      text: 'Percentages',
+                      text: 'Functions',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 266.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Roboto',
-                                  color: Colors.white,
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Readex Pro',
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
@@ -328,14 +295,13 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       ),
                     ),
                     FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed('PurePercentageB7');
                       },
-                      text: 'Patterns and Algebra',
+                      text: 'Percentages',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 206.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
@@ -359,9 +325,8 @@ class _B7LessonsWidgetState extends State<B7LessonsWidget> {
                       },
                       text: 'Problem Solving',
                       options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 250.0, 0.0),
+                        height: 50.0,
+                        padding: const EdgeInsets.all(0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,

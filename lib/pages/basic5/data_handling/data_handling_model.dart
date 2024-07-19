@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'fractions_decimals_widget.dart' show FractionsDecimalsWidget;
+import 'data_handling_widget.dart' show DataHandlingWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 
-class FractionsDecimalsModel extends FlutterFlowModel<FractionsDecimalsWidget> {
+class DataHandlingModel extends FlutterFlowModel<DataHandlingWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -19,12 +19,6 @@ class FractionsDecimalsModel extends FlutterFlowModel<FractionsDecimalsWidget> {
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController4;
 
-  // State field(s) for Expandable widget.
-  late ExpandableController expandableExpandableController5;
-
-  // State field(s) for Expandable widget.
-  late ExpandableController expandableExpandableController6;
-
   @override
   void initState(BuildContext context) {}
 
@@ -35,7 +29,5 @@ class FractionsDecimalsModel extends FlutterFlowModel<FractionsDecimalsWidget> {
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();
     expandableExpandableController4.dispose();
-    expandableExpandableController5.dispose();
-    expandableExpandableController6.dispose();
   }
 }

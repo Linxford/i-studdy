@@ -29,12 +29,32 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => const HomeWidget(),
+      errorBuilder: (context, state) => appStateNotifier.showSplashImage
+          ? Builder(
+              builder: (context) => Container(
+                color: Colors.transparent,
+                child: Image.asset(
+                  'assets/images/pngegg.png',
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+            )
+          : const HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomeWidget(),
+          builder: (context, _) => appStateNotifier.showSplashImage
+              ? Builder(
+                  builder: (context) => Container(
+                    color: Colors.transparent,
+                    child: Image.asset(
+                      'assets/images/pngegg.png',
+                      fit: BoxFit.fitWidth,
+                    ),
+                  ),
+                )
+              : const HomeWidget(),
         ),
         FFRoute(
           name: 'Lessons',
@@ -127,11 +147,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const Basic6QuizWidget(),
         ),
         FFRoute(
-          name: 'FractionsDecimals',
-          path: '/Numbers_numeracyCopy',
-          builder: (context, params) => const FractionsDecimalsWidget(),
-        ),
-        FFRoute(
           name: 'Multiplication_DivisionB6',
           path: '/Multiplication_DivisionCopy',
           builder: (context, params) => const MultiplicationDivisionB6Widget(),
@@ -180,6 +195,36 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'PurePercentageB7',
           path: '/PurePercentageB7',
           builder: (context, params) => const PurePercentageB7Widget(),
+        ),
+        FFRoute(
+          name: 'Patterns_AlgebraB7',
+          path: '/Patterns_AlgebraB6Copy',
+          builder: (context, params) => const PatternsAlgebraB7Widget(),
+        ),
+        FFRoute(
+          name: 'FunctionsB7',
+          path: '/FunctionsB7',
+          builder: (context, params) => const FunctionsB7Widget(),
+        ),
+        FFRoute(
+          name: 'Basic7Quiz',
+          path: '/basic7Quiz',
+          builder: (context, params) => const Basic7QuizWidget(),
+        ),
+        FFRoute(
+          name: 'FractionsDecimals',
+          path: '/FractionsDecimals',
+          builder: (context, params) => const FractionsDecimalsWidget(),
+        ),
+        FFRoute(
+          name: 'Money',
+          path: '/Money',
+          builder: (context, params) => const MoneyWidget(),
+        ),
+        FFRoute(
+          name: 'DataHandling',
+          path: '/MoneyCopy',
+          builder: (context, params) => const DataHandlingWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
