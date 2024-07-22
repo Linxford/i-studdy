@@ -1051,9 +1051,9 @@ class _NumbersNumeracyB7WidgetState extends State<NumbersNumeracyB7Widget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Readex Pro',
+                                                fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 15.0,
+                                                fontSize: 17.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),

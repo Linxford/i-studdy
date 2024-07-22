@@ -35,8 +35,6 @@ class _PatternsAlgebraB7WidgetState extends State<PatternsAlgebraB7Widget> {
         ExpandableController(initialExpanded: false);
     _model.expandableExpandableController5 =
         ExpandableController(initialExpanded: false);
-    _model.expandableExpandableController6 =
-        ExpandableController(initialExpanded: false);
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -709,96 +707,6 @@ class _PatternsAlgebraB7WidgetState extends State<PatternsAlgebraB7Widget> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          10.0, 10.0, 10.0, 10.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Container(
-                              width: double.infinity,
-                              color: Colors.white,
-                              child: ExpandableNotifier(
-                                controller:
-                                    _model.expandableExpandableController5,
-                                child: ExpandablePanel(
-                                  header: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Solved Examples',
-                                        textAlign: TextAlign.start,
-                                        style: FlutterFlowTheme.of(context)
-                                            .displaySmall
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              fontSize: 18.0,
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                  collapsed: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Tap to open lesson',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                  expanded: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 0.0, 5.0, 0.0),
-                                        child: Text(
-                                          'Percentage Questions\nQ.1: If 16% of 40% of a number is 8, then find the number.\n\nSolution:\n\nLet X be the required number.\n\nTherefore, as per the given question, \n\n(16/100) × (40/100) × X = 8\n\nSo, X = (8 × 100 × 100) / (16 × 40)\n\n= 125\n\nQ.2: What percentage of 2/7 is 1/35 ?\n\nSolution:\n\nLet X% of 2/7 is 1/35.\n\n∴ [(2/7) / 100] × X = 1/35\n\n⇒ X = (1/35) × (7/2) × 100 \n\n= 10%\n\nQ.3: Which number is 40% less than 90?\n\nSolution:\n\nRequired number = 60% of 90\n\n= (90 x 60)/100\n\n= 54\n\nTherefore, the number 54 is 40% less than 90.\n\nQ.4: The sum of (16% of 24.2) and (10% of 2.42) is equal to what value?\n\nSolution:\n\nAs per the given question ,\n\nSum = (16% of 24.2) + (10% of 2.42)\n\n= (24.2 × 16)/100 + (2.42 × 10)/100\n\n= 3.872 + 0.242\n\n= 4.114\n\nWord Problems\nQ.1: A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had how many apples?\n\nSolution:\n\nLet he had N apples, originally.\n\nNow, as per the given question, we have;\n\n(100 – 40)% of N = 420\n\n⇒ (60/100) × N = 420\n\n⇒ N = (420 × 100/60) = 700\n\nQ.2: Out of two numbers, 40% of the greater number is equal to 60% of the smaller. If the sum of the numbers is 150, then the greater number is?\n\nSolution:\n\nLet X be the greater number.\n\n∴ Smaller number = 150 – X {given that the sum of two numbers is 150}\n\nAccording to the question,\n\n(40 × X)/100 = 60(150 – X)/100\n\n⇒ 2p = 3 × 150 – 3X\n\n⇒ 5X = 3 × 150\n\n⇒ X = 90',
-                                          textAlign: TextAlign.justify,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color: Colors.black,
-                                                fontSize: 18.0,
-                                                letterSpacing: 0.0,
-                                              ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  theme: const ExpandableThemeData(
-                                    tapHeaderToExpand: true,
-                                    tapBodyToExpand: false,
-                                    tapBodyToCollapse: false,
-                                    headerAlignment:
-                                        ExpandablePanelHeaderAlignment.center,
-                                    hasIcon: true,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                       child: Row(
@@ -811,7 +719,7 @@ class _PatternsAlgebraB7WidgetState extends State<PatternsAlgebraB7Widget> {
                               color: Colors.white,
                               child: ExpandableNotifier(
                                 controller:
-                                    _model.expandableExpandableController6,
+                                    _model.expandableExpandableController5,
                                 child: ExpandablePanel(
                                   header: Align(
                                     alignment: const AlignmentDirectional(-1.0, 0.0),

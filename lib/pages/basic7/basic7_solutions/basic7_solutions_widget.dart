@@ -1,27 +1,26 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'basic5_quiz_model.dart';
-export 'basic5_quiz_model.dart';
+import 'basic7_solutions_model.dart';
+export 'basic7_solutions_model.dart';
 
-class Basic5QuizWidget extends StatefulWidget {
-  const Basic5QuizWidget({super.key});
+class Basic7SolutionsWidget extends StatefulWidget {
+  const Basic7SolutionsWidget({super.key});
 
   @override
-  State<Basic5QuizWidget> createState() => _Basic5QuizWidgetState();
+  State<Basic7SolutionsWidget> createState() => _Basic7SolutionsWidgetState();
 }
 
-class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
-  late Basic5QuizModel _model;
+class _Basic7SolutionsWidgetState extends State<Basic7SolutionsWidget> {
+  late Basic7SolutionsModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Basic5QuizModel());
+    _model = createModel(context, () => Basic7SolutionsModel());
 
     _model.expandableExpandableController1 =
         ExpandableController(initialExpanded: false);
@@ -32,8 +31,6 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
     _model.expandableExpandableController4 =
         ExpandableController(initialExpanded: false);
     _model.expandableExpandableController5 =
-        ExpandableController(initialExpanded: false);
-    _model.expandableExpandableController6 =
         ExpandableController(initialExpanded: false);
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -90,43 +87,45 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         ),
                                       ),
                                     ),
-                                    Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Text(
-                                          'i-Studdy Maths',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                fontSize: 18.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 95.0, 0.0),
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'i-Studdy Maths',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                          ),
+                                          Align(
+                                            alignment:
+                                                const AlignmentDirectional(-1.0, 0.0),
                                             child: Text(
-                                              'BASIC 5',
+                                              'Solutions',
                                               textAlign: TextAlign.start,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Readex Pro',
-                                                    fontSize: 10.0,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        fontSize: 15.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                      ),
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -145,7 +144,7 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                context.safePop();
+                                context.pushNamed('Basic6Content');
                               },
                               child: Icon(
                                 Icons.arrow_circle_left_outlined,
@@ -182,14 +181,14 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Numbers & Numeracy Quiz',
+                                          'Numbers',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .displaySmall
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 18.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -227,16 +226,22 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                     expanded: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        Text(
-                                          'Write the following numbers in words\na. 34\nb. 123\nc. 2345\nd. 10234\ne. 700',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Open Sans',
-                                                color: Colors.black,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
-                                              ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1. Solve the given algebraic expression 4(3+2) using the distributive property\nSolution:\n\nGiven expression: We know that the distributive property is a × (b + c) = (a×b) + (a×c)\n\nNow, take a= 4, b= 3 and c= 2\n\nNow, substituting values, we get\n\n4.(3+2) =  (a×b) + (a×c)\n\n= (4×3) + (4×2)\n\n= 12+8\n\n= 20\n\nHence, 4.(3+2) is 20.\n\nAlternate method:\n\nThe expression can be solved using BODMAS Rule also\n\nApply, BODMAS rule in the given expression:4.(3+2) \n\nAccording to this rule, we have the simplify the value inside the brackets first, so we get\n\n4.(3+2) = 4. 5\n\nNow, multiply the values\n\n4.(3+2) = 20.\n\n2. Write down the associative property of numbers.\nAnswer:\nThe associative property states that the way in which numbers are grouped in addition or multiplication does not change their sum or product.\n\nFor addition:\n(a+b)+c=a+(b+c)\n\nFor multiplication:\n(a⋅b)⋅c=a⋅(b⋅c)\n\n3. Using a = 2, b= 4 and c = 5,\nProve that (a.b).c = a.(b.c)\n\nSolution:\nNow, substitute the values in the property\n\n(2+4)+5 = 2+(4+5)\n\n6+5 = 2+9\n\n11 = 11\n\nL.H.S = R.H.S\n\nHence, (a+b)+c = a+(b+c) is proved.\n\nProving associative property of multiplication:\n\n(2.4).5 = 2.(4.5)\n\n(8).5 = 2.(20)\n\n40 = 40\n\nL.H.S = R.H.S\n\nHence, (a.b).c = a.(b.c) is proved.\n',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -280,14 +285,14 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Addition & Subtraction of Numbers',
-                                          textAlign: TextAlign.start,
+                                          'Functions',
+                                          textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .displaySmall
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 18.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -330,15 +335,16 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            '\n1. The population of citizens living in North London is 6 3 6 9 and East London is 7 6 9 3. How many citizens altogether live in the North and East London?\n2. What is the sum of 67453 and the addition of 6176 and 7832\n3. A woman who owns a music store starts her week with 965 CDs. She sells 452 by the end\nof the week. How many CDs does she have remaining?',
+                                            '1. The function f : A → B defined by f(x) = 4x + 7, x ∈ R is\na. One-to-One\nb. Many-to-One\nc. Odd\nd. Even\nAsnwer: A\n\n2. The function written as y = -4x+16 is general form of\n\nOptions :\n\nA. Slope 4, y-intercept (0, -4)\nB. Slope 16, y-intercept (0, -4)\nC. Slope -4, y-intercept (0, -16)\nD. Slope -4, y-intercept (0, 16)\n Answer:  D\nD. Slope -4, y-intercept (0, 16): The function y=−4x+16 is in the slope-intercept form y=mx+c, where m is the slope and c is the y-intercept. Here, the slope m is -4 and the y-intercept c is 16, giving us the y-intercept point (0, 16).\n\n3. Which of the following relations are functions?\n\nOptions :\n\nA. R = {(1, 7) (2, 7) (4, 7) (6, 7)}\nB. R = {(1, 2) (1, 3) (1, 4) (1, 5)}\nC. R = {(x, y) (y, z) (z, t) (t, v)}\nD. None of these\n\nSolution:\nA. R={(1,7),(2,7),(4,7),(6,7)}: This is a function because each input (first element of each pair) maps to exactly one output (second element).\n\nB. R={(1,2),(1,3),(1,4),(1,5)}: This is not a function because the input 1 maps to multiple outputs.\n\nC. R={(x,y),(y,z),(z,t),(t,v)}: Without specific values, it’s unclear whether this is a function. However, for it to be a function, each x should map to exactly one y.\n\nCorrect Answer: A.\n\n4. A function f:R->R is defined by f(x) = x2. Determine range of f.\n\nOptions :\n\nA. R+ U {0}\nB. R\nC. R- U {0}\nD. None of these\nSolution:\n\nA. 𝑅+∪{0}: The function f(x)=x 2 maps any real number 𝑥 to a non-negative real number. Therefore, the range is all non-negative real numbers, which is \n𝑅+∪{0}\n\n5. Write the following relations as sets of ordered pairs and find which of them are functions:\n\nOptions :\n\nA. {(x, y): y = 3x, x ∈ {1, 2, 3}, y ∈ {3, 6, 9, 12}}\nB.  (x, y): y > x + 1, x = 1, 2 and y = 2, 4, 6}\nC. {(x, y): x - y = 3, x, y ∈ {0, 1, 2, 3}}\nD. None of these\n\nCorrect Answer: A',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Open Sans',
+                                                  fontFamily: 'Poppins',
                                                   color: Colors.black,
+                                                  fontSize: 18.0,
                                                   letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w500,
+                                                  fontWeight: FontWeight.normal,
                                                 ),
                                           ),
                                         ),
@@ -384,14 +390,14 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Multiplication & Division',
+                                          'Arithmetic Operations',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .displaySmall
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 18.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -434,15 +440,16 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            '1.  If a packet contains 24 candies and you have 5 packets, how many candies do you have in total?\n\n2. You have 120 candies in total.\n\n3.  Divide 300 by 25.\n\n4.  A farmer has 240 apples. He wants to put them into bags containing 8 apples each. How many bags can he fill?\n\n5.  Multiply 23 by 6.\n\n6.  If there are 180 marbles and you want to divide them equally into 15 groups, how many marbles will be in each group?\n\n',
+                                            '1. Ganesh ran 12 laps every day for 8 days. How many laps did he run in all?\n\nOptions :\nA. 20\nB. 96\nC. 84\nD. 120\nAnswer: B.90\n\n2. The population of a city is 198568. Out of them 45312 are women and 35678 are men. Find the number of children in the city.\n\nOptions :\nA. 118758\nB. 117085\nC. 117578\nD. 116865\nAnswer: C\n\n3. Find out the two signs to be interchanged for making following equation correct. 5 + 3 x 8 - 12 / 4 =3\n\nOptions :\nA. plus and minus\nB. minus and division\nC. plus and multiplication\nD. plus and division\nAnswer: D. plus and division\n\n4. If + means ÷, ÷ means -, - means × and × means +, then 36 × 12 + 3 ÷ 5 - 2 is\n\nOptions :\nA. 22\nB. 85\nC. 56\nD. 30\nAnswer: C. 56\n\n5. The salary of Geetha for six months is GHC 9450. Find her monthly salary.\n\nOptions :\n\nA. GHC1575\nB. GHC1255\nC. GHC1375\nD. GHC1405\nNB:\nMonthly salary= \nNumber of months / Total salary\n​\nMonthly salary=9450/6\n=1575\n\nAnswer: A. GHC 1,575',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Open Sans',
+                                                  fontFamily: 'Poppins',
                                                   color: Colors.black,
+                                                  fontSize: 17.0,
                                                   letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w500,
+                                                  fontWeight: FontWeight.normal,
                                                 ),
                                           ),
                                         ),
@@ -488,14 +495,14 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Fractions & Decimals',
+                                          'Percentages',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .displaySmall
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 18.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -538,7 +545,7 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            '1. Simplify the fraction 18/24\n2. Add the fractions 3/4+  2/5\n3. Subtract the fractions 7/8+  1/6\n4. Multiply the fractions  7/8×  1/6\n5. Divide the fractions 7/12 ÷ 14/15\n6.Convert the fraction 7/8 to a decimal.\n7. Add the decimals 2.75 + 3.42.\n8. Subtract the decimals 5.6 - 3.47.\n9. Multiply the decimals 0.8 × 0.25.\n10. Divide the decimals 6.4 ÷ 0.8.',
+                                            'Q.1: If 16% of 40% of a number is 8, then find the number.\n\nSolution:\n\nLet X be the required number.\n\nTherefore, as per the given question, \n\n(16/100) × (40/100) × X = 8\n\nSo, X = (8 × 100 × 100) / (16 × 40)\n\n= 125\n\nQ.2: What percentage of 2/7 is 1/35 ?\n\nSolution:\n\nLet X% of 2/7 is 1/35.\n\n∴ [(2/7) / 100] × X = 1/35\n\n⇒ X = (1/35) × (7/2) × 100 \n\n= 10%\n\nQ.3: Which number is 40% less than 90?\n\nSolution:\n\nRequired number = 60% of 90\n\n= (90 x 60)/100\n\n= 54\n\nTherefore, the number 54 is 40% less than 90.\n\nQ.4: The sum of (16% of 24.2) and (10% of 2.42) is equal to what value?\n\nSolution:\n\nAs per the given question ,\n\nSum = (16% of 24.2) + (10% of 2.42)\n\n= (24.2 × 16)/100 + (2.42 × 10)/100\n\n= 3.872 + 0.242\n\n= 4.114\n\nWord Problems\nQ.1: A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had how many apples?\n\nSolution:\n\nLet he had N apples, originally.\n\nNow, as per the given question, we have;\n\n(100 – 40)% of N = 420\n\n⇒ (60/100) × N = 420\n\n⇒ N = (420 × 100/60) = 700\n\nQ.2: Out of two numbers, 40% of the greater number is equal to 60% of the smaller. If the sum of the numbers is 150, then the greater number is?\n\nSolution:\n\nLet X be the greater number.\n\n∴ Smaller number = 150 – X {given that the sum of two numbers is 150}\n\nAccording to the question,\n\n(40 × X)/100 = 60(150 – X)/100\n\n⇒ 2p = 3 × 150 – 3X\n\n⇒ 5X = 3 × 150\n\n⇒ X = 90\n',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -593,14 +600,14 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Money',
+                                          'Ratio & Proportion',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .displaySmall
                                               .override(
                                                 fontFamily: 'Poppins',
                                                 color: Colors.black,
-                                                fontSize: 18.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -643,112 +650,7 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            '1. The cost of a notebook is GH₵12.75. Find the cost of five notebooks.\n2.  Kofi has GH₵150. He buys a bicycle for GH₵89.50 and a helmet for GH₵25.75. How much money does he have left?\n3. The cost of a chair is GH₵45.80. Find the cost of three chairs.\n4. Ama bought a dress for GH₵75.50 and a pair of shoes for GH₵42.30. She had one GH₵200 note. How much money does she have now?',
-                                            textAlign: TextAlign.justify,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: Colors.black,
-                                                  fontSize: 18.0,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    theme: const ExpandableThemeData(
-                                      tapHeaderToExpand: true,
-                                      tapBodyToExpand: false,
-                                      tapBodyToCollapse: false,
-                                      headerAlignment:
-                                          ExpandablePanelHeaderAlignment.center,
-                                      hasIcon: true,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  10.0, 0.0, 10.0, 0.0),
-                              child: Container(
-                                width: double.infinity,
-                                color: Colors.white,
-                                child: ExpandableNotifier(
-                                  controller:
-                                      _model.expandableExpandableController6,
-                                  child: ExpandablePanel(
-                                    header: Align(
-                                      alignment:
-                                          const AlignmentDirectional(-1.0, 0.0),
-                                      child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          'Data Handling',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .displaySmall
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color: Colors.black,
-                                                fontSize: 18.0,
-                                                letterSpacing: 0.0,
-                                              ),
-                                        ),
-                                      ),
-                                    ),
-                                    collapsed: Container(
-                                      width: MediaQuery.sizeOf(context).width *
-                                          1.0,
-                                      height: 40.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                      ),
-                                      child: Align(
-                                        alignment:
-                                            const AlignmentDirectional(-1.0, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  5.0, 8.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Tap to Open the quiz',
-                                            textAlign: TextAlign.center,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Readex Pro',
-                                                  color: const Color(0x8A000000),
-                                                  letterSpacing: 0.0,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    expanded: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  5.0, 0.0, 5.0, 0.0),
-                                          child: Text(
-                                            '1. What is Data\n2. State the types of data and explain them with examples',
+                                            '1. Twenty tons of iron is GHC 600000  What is the cost of 560 kilograms of iron?\n\nSolution: \n\n1 ton = 1000 kg\n20 tons = 20000 kg\nThe cost of 20000 kg iron = GHC 600000\nThe cost of 1 kg iron = GHC{600000}/ {20000}\n= GHC 30\nThe cost of 560 kg iron = GHC 30 × 560 = GHC 16800\n\n2. The dimensions of the rectangular field are given. The length and breadth of the rectangular field are 50 meters and 15 meters. What is the ratio of the length and breadth of the field?\n\nSolution: \n\nLength of the rectangular field = 50 m\n\nBreadth of the rectangular field = 15 m\n\nHence, the ratio of length to breadth = 50: 15\n\n⇒ 50: 15 = 10: 3.\n\nThus, the ratio of length and breadth of the rectangular field is 10:3.\n\n3. Obtain a ratio of 90 centimetres to 1.5 meters.\n\nSolution: \n\nThe given two quantities are not in the same units.\n\nConvert them into the same units.\n\n1.5 m = 1.5 × 100 = 150 cm\n\nHence, the required ratio is 90 cm: 150 cm\n\n⇒ 90: 150 = 3: 5\n\nTherefore, the ratio of 90 centimetres to 1.5 meters is 3: 5.',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -780,42 +682,6 @@ class _Basic5QuizWidgetState extends State<Basic5QuizWidget> {
                       ),
                     ),
                   ],
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 1.0),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('Basic5Sotuions');
-                    },
-                    text: 'View Suggested Solutions',
-                    icon: const Icon(
-                      Icons.remove_red_eye_outlined,
-                      size: 15.0,
-                    ),
-                    options: FFButtonOptions(
-                      height: 52.0,
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: const Color(0xFF21A351),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: const BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                  ),
                 ),
               ),
             ],

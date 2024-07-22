@@ -81,6 +81,8 @@ class _B5LessonsWidgetState extends State<B5LessonsWidget> {
                                     ),
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           'i-Studdy Maths',
@@ -101,7 +103,7 @@ class _B5LessonsWidgetState extends State<B5LessonsWidget> {
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 95.0, 0.0),
                                             child: Text(
-                                              'BASIC 5',
+                                              'BASIC 5 LESSONS',
                                               textAlign: TextAlign.start,
                                               style: FlutterFlowTheme.of(
                                                       context)
@@ -301,13 +303,13 @@ class _B5LessonsWidgetState extends State<B5LessonsWidget> {
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                       child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
+                        onPressed: () async {
+                          context.pushNamed('DataHandling');
                         },
                         text: 'Data Handling',
                         options: FFButtonOptions(
                           width: double.infinity,
-                          height: 40.0,
+                          height: 50.0,
                           padding: const EdgeInsets.all(0.0),
                           iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
@@ -337,7 +339,7 @@ class _B5LessonsWidgetState extends State<B5LessonsWidget> {
                         text: 'Money',
                         options: FFButtonOptions(
                           width: double.infinity,
-                          height: 40.0,
+                          height: 50.0,
                           padding: const EdgeInsets.all(0.0),
                           iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
@@ -367,7 +369,7 @@ class _B5LessonsWidgetState extends State<B5LessonsWidget> {
                         text: 'Problem Solving',
                         options: FFButtonOptions(
                           width: double.infinity,
-                          height: 40.0,
+                          height: 50.0,
                           padding: const EdgeInsets.all(0.0),
                           iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),

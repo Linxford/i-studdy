@@ -6,8 +6,6 @@ export '/pages/basic6/b6_lessons/b6_lessons_widget.dart' show B6LessonsWidget;
 export '/pages/basic7/b7_lessons/b7_lessons_widget.dart' show B7LessonsWidget;
 export '/pages/home/home_widget.dart' show HomeWidget;
 export '/pages/dashboard/dashboard_widget.dart' show DashboardWidget;
-export '/pages/b5_lessons_copy/b5_lessons_copy_widget.dart'
-    show B5LessonsCopyWidget;
 export '/pages/basic6/basic6_content/basic6_content_widget.dart'
     show Basic6ContentWidget;
 export '/pages/basic5/b5_content/b5_content_widget.dart' show B5ContentWidget;
@@ -56,3 +54,9 @@ export '/pages/basic6/fractions_decimals/fractions_decimals_widget.dart'
 export '/pages/basic5/money/money_widget.dart' show MoneyWidget;
 export '/pages/basic5/data_handling/data_handling_widget.dart'
     show DataHandlingWidget;
+export '/pages/basic5/basic5_sotuions/basic5_sotuions_widget.dart'
+    show Basic5SotuionsWidget;
+export '/pages/basic6/basic6_solutions/basic6_solutions_widget.dart'
+    show Basic6SolutionsWidget;
+export '/pages/basic7/basic7_solutions/basic7_solutions_widget.dart'
+    show Basic7SolutionsWidget;

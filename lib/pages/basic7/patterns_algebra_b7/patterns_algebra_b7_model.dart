@@ -22,9 +22,6 @@ class PatternsAlgebraB7Model extends FlutterFlowModel<PatternsAlgebraB7Widget> {
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController5;
 
-  // State field(s) for Expandable widget.
-  late ExpandableController expandableExpandableController6;
-
   @override
   void initState(BuildContext context) {}
 
@@ -36,6 +33,5 @@ class PatternsAlgebraB7Model extends FlutterFlowModel<PatternsAlgebraB7Widget> {
     expandableExpandableController3.dispose();
     expandableExpandableController4.dispose();
     expandableExpandableController5.dispose();
-    expandableExpandableController6.dispose();
   }
 }

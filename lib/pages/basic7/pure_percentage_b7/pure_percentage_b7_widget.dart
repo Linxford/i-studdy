@@ -117,8 +117,8 @@ class _PurePercentageB7WidgetState extends State<PurePercentageB7Widget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Readex Pro',
-                                                fontSize: 10.0,
+                                                fontFamily: 'Poppins',
+                                                fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
                                               ),
@@ -595,9 +595,9 @@ class _PurePercentageB7WidgetState extends State<PurePercentageB7Widget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Poppins',
                                             color: Colors.black,
-                                            fontSize: 15.0,
+                                            fontSize: 18.0,
                                             letterSpacing: 0.0,
                                           ),
                                     ),

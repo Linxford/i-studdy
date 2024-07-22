@@ -343,7 +343,8 @@ class _MultiplicationDivisionB6WidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Poppins',
+                                              fontSize: 18.0,
                                               letterSpacing: 0.0,
                                             ),
                                       ),

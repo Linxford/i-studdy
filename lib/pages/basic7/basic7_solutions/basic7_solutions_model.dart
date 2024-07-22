@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'basic7_quiz_widget.dart' show Basic7QuizWidget;
+import 'basic7_solutions_widget.dart' show Basic7SolutionsWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 
-class Basic7QuizModel extends FlutterFlowModel<Basic7QuizWidget> {
+class Basic7SolutionsModel extends FlutterFlowModel<Basic7SolutionsWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

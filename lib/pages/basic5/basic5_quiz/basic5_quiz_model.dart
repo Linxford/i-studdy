@@ -16,6 +16,15 @@ class Basic5QuizModel extends FlutterFlowModel<Basic5QuizWidget> {
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController3;
 
+  // State field(s) for Expandable widget.
+  late ExpandableController expandableExpandableController4;
+
+  // State field(s) for Expandable widget.
+  late ExpandableController expandableExpandableController5;
+
+  // State field(s) for Expandable widget.
+  late ExpandableController expandableExpandableController6;
+
   @override
   void initState(BuildContext context) {}
 
@@ -25,5 +34,8 @@ class Basic5QuizModel extends FlutterFlowModel<Basic5QuizWidget> {
     expandableExpandableController1.dispose();
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();
+    expandableExpandableController4.dispose();
+    expandableExpandableController5.dispose();
+    expandableExpandableController6.dispose();
   }
 }

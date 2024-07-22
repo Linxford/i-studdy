@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'basic7_quiz_widget.dart' show Basic7QuizWidget;
+import 'basic5_sotuions_widget.dart' show Basic5SotuionsWidget;
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 
-class Basic7QuizModel extends FlutterFlowModel<Basic7QuizWidget> {
+class Basic5SotuionsModel extends FlutterFlowModel<Basic5SotuionsWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -22,6 +22,9 @@ class Basic7QuizModel extends FlutterFlowModel<Basic7QuizWidget> {
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController5;
 
+  // State field(s) for Expandable widget.
+  late ExpandableController expandableExpandableController6;
+
   @override
   void initState(BuildContext context) {}
 
@@ -33,5 +36,6 @@ class Basic7QuizModel extends FlutterFlowModel<Basic7QuizWidget> {
     expandableExpandableController3.dispose();
     expandableExpandableController4.dispose();
     expandableExpandableController5.dispose();
+    expandableExpandableController6.dispose();
   }
 }

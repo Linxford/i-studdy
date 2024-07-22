@@ -767,16 +767,16 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                     child: Container(
                       width: double.infinity,
                       height: 50.0,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFF1F4F8),
-                        borderRadius: BorderRadius.only(
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).warning,
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(5.0),
                           bottomRight: Radius.circular(5.0),
                           topLeft: Radius.circular(5.0),
                           topRight: Radius.circular(5.0),
                         ),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -796,7 +796,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   Icons.home_outlined,
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryText,
-                                  size: 50.0,
+                                  size: 40.0,
                                 ),
                               ),
                               Text(
@@ -805,6 +805,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       fontSize: 10.0,
                                       letterSpacing: 0.0,
                                     ),

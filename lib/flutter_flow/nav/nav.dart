@@ -92,11 +92,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const DashboardWidget(),
         ),
         FFRoute(
-          name: 'B5LessonsCopy',
-          path: '/b5LessonsCopy',
-          builder: (context, params) => const B5LessonsCopyWidget(),
-        ),
-        FFRoute(
           name: 'Basic6Content',
           path: '/basic6Content',
           builder: (context, params) => const Basic6ContentWidget(),
@@ -225,6 +220,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DataHandling',
           path: '/MoneyCopy',
           builder: (context, params) => const DataHandlingWidget(),
+        ),
+        FFRoute(
+          name: 'Basic5Sotuions',
+          path: '/basic5Sotuions',
+          builder: (context, params) => const Basic5SotuionsWidget(),
+        ),
+        FFRoute(
+          name: 'Basic6Solutions',
+          path: '/basic6Solutions',
+          builder: (context, params) => const Basic6SolutionsWidget(),
+        ),
+        FFRoute(
+          name: 'Basic7Solutions',
+          path: '/basic7Solutions',
+          builder: (context, params) => const Basic7SolutionsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

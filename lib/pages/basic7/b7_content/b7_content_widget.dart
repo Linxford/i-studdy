@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 import 'b7_content_model.dart';
 export 'b7_content_model.dart';
 
@@ -152,155 +151,45 @@ class _B7ContentWidgetState extends State<B7ContentWidget> {
                       child: Container(
                         width: double.infinity,
                         height: 180.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 4.0,
+                              color: Color(0x33000000),
+                              offset: Offset(
+                                0.0,
+                                5.0,
+                              ),
+                            )
+                          ],
                           gradient: LinearGradient(
-                            colors: [
-                              FlutterFlowTheme.of(context).secondary,
-                              FlutterFlowTheme.of(context).primary
-                            ],
-                            stops: const [0.0, 1.0],
-                            begin: const AlignmentDirectional(0.0, -1.0),
-                            end: const AlignmentDirectional(0, 1.0),
+                            colors: [Color(0xFFF958BF), Color(0xFF4191D4)],
+                            stops: [0.0, 1.0],
+                            begin: AlignmentDirectional(0.0, -1.0),
+                            end: AlignmentDirectional(0, 1.0),
                           ),
-                          borderRadius: const BorderRadius.only(
+                          borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(30.0),
                             bottomRight: Radius.circular(30.0),
                             topLeft: Radius.circular(30.0),
                             topRight: Radius.circular(30.0),
                           ),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 11.0, 0.0, 0.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 1.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Your progress ',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            fontSize: 16.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 9.56, 0.0, 0.0),
-                                    child: Text(
-                                      'Basic 7',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            fontSize: 12.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 6.0, 0.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(
-                                      Icons.star_rounded,
-                                      color:
-                                          FlutterFlowTheme.of(context).warning,
-                                      size: 14.0,
-                                    ),
-                                    Text(
-                                      '5.0',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: Colors.white,
-                                            fontSize: 10.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Container(
-                                        width: 10.0,
-                                        height: 10.0,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          borderRadius: const BorderRadius.only(
-                                            bottomLeft: Radius.circular(30.0),
-                                            bottomRight: Radius.circular(30.0),
-                                            topLeft: Radius.circular(30.0),
-                                            topRight: Radius.circular(30.0),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Text(
-                                      'Keep it up!',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ],
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: Text(
+                            'WELCOME TO \nBASIC 7 LESSONS',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                  fontSize: 30.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
                                 ),
-                              ),
-                              CircularPercentIndicator(
-                                percent: 0.5,
-                                radius: 40.0,
-                                lineWidth: 10.0,
-                                animation: true,
-                                animateFromLastPercent: true,
-                                progressColor:
-                                    FlutterFlowTheme.of(context).warning,
-                                backgroundColor:
-                                    FlutterFlowTheme.of(context).accent4,
-                                center: Text(
-                                  '50%',
-                                  style: FlutterFlowTheme.of(context)
-                                      .headlineSmall
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        fontSize: 20.0,
-                                        letterSpacing: 0.0,
-                                      ),
-                                ),
-                              ),
-                            ],
                           ),
                         ),
                       ),
@@ -396,7 +285,7 @@ class _B7ContentWidgetState extends State<B7ContentWidget> {
                                       width: 80.0,
                                       height: 80.0,
                                       decoration: const BoxDecoration(
-                                        color: Color(0xFFFF9F35),
+                                        color: Color(0xFFFF35BC),
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(20.0),
                                           bottomRight: Radius.circular(20.0),
@@ -504,64 +393,84 @@ class _B7ContentWidgetState extends State<B7ContentWidget> {
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 1.0, 0.0, 0.0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 0.0, 0.0, 0.0),
-                                child: InkWell(
-                                  splashColor: Colors.transparent,
-                                  focusColor: Colors.transparent,
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  onTap: () async {
-                                    context.pushNamed('B5Lessons');
-                                  },
-                                  child: Container(
-                                    width: 80.0,
-                                    height: 80.0,
-                                    decoration: const BoxDecoration(
-                                      color: Color(0xFF4191D4),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(20.0),
-                                        bottomRight: Radius.circular(20.0),
-                                        topLeft: Radius.circular(20.0),
-                                        topRight: Radius.circular(20.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Basic7Quiz');
+                            },
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 0.0, 0.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('B5Lessons');
+                                    },
+                                    child: Container(
+                                      width: 80.0,
+                                      height: 80.0,
+                                      decoration: const BoxDecoration(
+                                        color: Color(0xFF4191D4),
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(20.0),
+                                          bottomRight: Radius.circular(20.0),
+                                          topLeft: Radius.circular(20.0),
+                                          topRight: Radius.circular(20.0),
+                                        ),
                                       ),
-                                    ),
-                                    child: Icon(
-                                      Icons.quora_sharp,
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      size: 75.0,
+                                      child: Icon(
+                                        Icons.quora_sharp,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                        size: 75.0,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 15.0, 0.0, 15.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'QUIZ & ASSIGNMENT',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 16.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      20.0, 15.0, 0.0, 15.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('Basic7Quiz');
+                                    },
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'QUIZ & ASSIGNMENT',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 16.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        ),
+                                      ],
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),

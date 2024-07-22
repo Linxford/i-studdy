@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'basic7_quiz_model.dart';
@@ -30,6 +31,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
         ExpandableController(initialExpanded: false);
     _model.expandableExpandableController4 =
         ExpandableController(initialExpanded: false);
+    _model.expandableExpandableController5 =
+        ExpandableController(initialExpanded: false);
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -51,13 +54,11 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
+          child: Stack(
+            children: [
+              SingleChildScrollView(
+                child: Column(
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
                       mainAxisSize: MainAxisSize.max,
@@ -65,487 +66,660 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                       children: [
                         Row(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 0.0, 0.0),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: Image.asset(
-                                      'assets/images/pngegg.png',
-                                      width: 65.0,
-                                      height: 65.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'i-Studdy Maths',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              fontSize: 18.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            const AlignmentDirectional(-1.0, 0.0),
-                                        child: Text(
-                                          'QUIZ',
-                                          textAlign: TextAlign.start,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                fontSize: 10.0,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                              ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          5.0, 0.0, 0.0, 0.0),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        child: Image.asset(
+                                          'assets/images/pngegg.png',
+                                          width: 65.0,
+                                          height: 65.0,
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'i-Studdy Maths',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                          ),
+                                          Align(
+                                            alignment:
+                                                const AlignmentDirectional(-1.0, 0.0),
+                                            child: Text(
+                                              'QUIZ',
+                                              textAlign: TextAlign.start,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Readex Pro',
+                                                    fontSize: 10.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
                           ],
                         ),
-                      ],
-                    ),
-                    Align(
-                      alignment: const AlignmentDirectional(1.0, 0.0),
-                      child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('Basic6Content');
-                          },
-                          child: Icon(
-                            Icons.arrow_circle_left_outlined,
-                            color: FlutterFlowTheme.of(context).secondaryText,
-                            size: 24.0,
+                        Align(
+                          alignment: const AlignmentDirectional(1.0, 0.0),
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 10.0, 0.0),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Basic6Content');
+                              },
+                              child: Icon(
+                                Icons.arrow_circle_left_outlined,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 24.0,
+                              ),
+                            ),
                           ),
                         ),
+                      ],
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 0.0, 10.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: ExpandableNotifier(
+                                  controller:
+                                      _model.expandableExpandableController1,
+                                  child: ExpandablePanel(
+                                    header: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          'Numbers',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color: Colors.black,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                    collapsed: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          1.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Tap to Open the quiz',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: const Color(0x8A000000),
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    expanded: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1. Solve the given algebraic expression 4(3+2) using the distributive property\n\n2. Write down the associative property of numbers.\n\n3. Using a = 2, b= 4 and c = 5\nProve that (a.b).c = a.(b.c)',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    theme: const ExpandableThemeData(
+                                      tapHeaderToExpand: true,
+                                      tapBodyToExpand: false,
+                                      tapBodyToCollapse: false,
+                                      headerAlignment:
+                                          ExpandablePanelHeaderAlignment.center,
+                                      hasIcon: true,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 0.0, 10.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: ExpandableNotifier(
+                                  controller:
+                                      _model.expandableExpandableController2,
+                                  child: ExpandablePanel(
+                                    header: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          'Functions',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color: Colors.black,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                    collapsed: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          1.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 8.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Tap to Open the quiz',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: const Color(0x8A000000),
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    expanded: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1. The function f : A → B defined by f(x) = 4x + 7, x ∈ R is\na. One-to-One\nb. Many-to-One\nc. Odd\nd. Even\n\n2. The function written as y = -4x+16 is general form of\n\nOptions :\n\nA. Slope 4, y-intercept (0, -4)\nB. Slope 16, y-intercept (0, -4)\nC. Slope -4, y-intercept (0, -16)\nD. Slope -4, y-intercept (0, 16)\n\n3. Which of the following relations are functions?\n\nOptions :\n\nA. R = {(1, 7) (2, 7) (4, 7) (6, 7)}\nB. R = {(1, 2) (1, 3) (1, 4) (1, 5)}\nC. R = {(x, y) (y, z) (z, t) (t, v)}\nD. None of these\n\n4. A function f:R->R is defined by f(x) = x2. Determine range of f.\n\nOptions :\n\nA. R+ U {0}\nB. R\nC. R- U {0}\nD. None of these\n\n5. Write the following relations as sets of ordered pairs and find which of them are functions:\n\nOptions :\n\nA. {(x, y): y = 3x, x ∈ {1, 2, 3}, y ∈ {3, 6, 9, 12}}\nB.  (x, y): y > x + 1, x = 1, 2 and y = 2, 4, 6}\nC. {(x, y): x - y = 3, x, y ∈ {0, 1, 2, 3}}\nD. None of these',
+                                            textAlign: TextAlign.justify,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    theme: const ExpandableThemeData(
+                                      tapHeaderToExpand: true,
+                                      tapBodyToExpand: false,
+                                      tapBodyToCollapse: false,
+                                      headerAlignment:
+                                          ExpandablePanelHeaderAlignment.center,
+                                      hasIcon: true,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 0.0, 10.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: ExpandableNotifier(
+                                  controller:
+                                      _model.expandableExpandableController3,
+                                  child: ExpandablePanel(
+                                    header: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          'Operations',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color: Colors.black,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                    collapsed: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          1.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 8.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Tap to Open the quiz',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: const Color(0x8A000000),
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    expanded: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1. Ganesh ran 12 laps every day for 8 days. How many laps did he run in all?\n\nOptions :\nA. 20\nB. 96\nC. 84\nD. 120\n\n2. The population of a city is 198568. Out of them 45312 are women and 35678 are men. Find the number of children in the city.\n\nOptions :\nA. 118758\nB. 117085\nC. 117578\nD. 116865\n\n3. Find out the two signs to be interchanged for making following equation correct. 5 + 3 x 8 - 12 / 4 =3\n\nOptions :\nA. plus and minus\nB. minus and division\nC. plus and multiplication\nD. plus and division\n\n4. If + means ÷, ÷ means -, - means × and × means +, then 36 × 12 + 3 ÷ 5 - 2 is\n\nOptions :\nA. 22\nB. 85\nC. 49\nD. 30\n\n5. The salary of Geetha for six months is GHC 9450. Find her monthly salary.\n\nOptions :\n\nA. GHC1575\nB. GHC1255\nC. GHC1375\nD. GHC1405',
+                                            textAlign: TextAlign.justify,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  fontSize: 17.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    theme: const ExpandableThemeData(
+                                      tapHeaderToExpand: true,
+                                      tapBodyToExpand: false,
+                                      tapBodyToCollapse: false,
+                                      headerAlignment:
+                                          ExpandablePanelHeaderAlignment.center,
+                                      hasIcon: true,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 0.0, 10.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: ExpandableNotifier(
+                                  controller:
+                                      _model.expandableExpandableController4,
+                                  child: ExpandablePanel(
+                                    header: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          'Percentages',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color: Colors.black,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                    collapsed: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          1.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 8.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Tap to Open the quiz',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: const Color(0x8A000000),
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    expanded: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1.If 16% of 40% of a number is 8, then find the number.\n\n2.What percentage of 2/7 is 1/35 ?\n\n3.: A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had how many apples?',
+                                            textAlign: TextAlign.justify,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    theme: const ExpandableThemeData(
+                                      tapHeaderToExpand: true,
+                                      tapBodyToExpand: false,
+                                      tapBodyToCollapse: false,
+                                      headerAlignment:
+                                          ExpandablePanelHeaderAlignment.center,
+                                      hasIcon: true,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 0.0, 10.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: ExpandableNotifier(
+                                  controller:
+                                      _model.expandableExpandableController5,
+                                  child: ExpandablePanel(
+                                    header: Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          'Ratio & Proportion',
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Poppins',
+                                                color: Colors.black,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                      ),
+                                    ),
+                                    collapsed: Container(
+                                      width: MediaQuery.sizeOf(context).width *
+                                          1.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                      child: Align(
+                                        alignment:
+                                            const AlignmentDirectional(-1.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 8.0, 0.0, 0.0),
+                                          child: Text(
+                                            'Tap to Open the quiz',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Readex Pro',
+                                                  color: const Color(0x8A000000),
+                                                  letterSpacing: 0.0,
+                                                ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    expanded: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 5.0, 0.0),
+                                          child: Text(
+                                            '1. Twenty tons of iron is GHC 600000  What is the cost of 560 kilograms of iron?\n\n2. The dimensions of the rectangular field are given. The length and breadth of the rectangular field are 50 meters and 15 meters. What is the ratio of the length and breadth of the field?\n\n3. Obtain a ratio of 90 centimetres to 1.5 meters.',
+                                            textAlign: TextAlign.justify,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.black,
+                                                  fontSize: 18.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    theme: const ExpandableThemeData(
+                                      tapHeaderToExpand: true,
+                                      tapBodyToExpand: false,
+                                      tapBodyToCollapse: false,
+                                      headerAlignment:
+                                          ExpandablePanelHeaderAlignment.center,
+                                      hasIcon: true,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
-                          child: Container(
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: ExpandableNotifier(
-                              controller:
-                                  _model.expandableExpandableController1,
-                              child: ExpandablePanel(
-                                header: Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 0.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Numbers & Numeracy Quiz',
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .displaySmall
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 15.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                collapsed: Container(
-                                  width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 40.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                  ),
-                                  child: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Tap to Open the quiz',
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color: const Color(0x8A000000),
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                expanded: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Text(
-                                        'Write the following figures in words\n\n1, 25734183\n2. 3217416532\n3. 19003016409\n4, 434055360\n\nWrite the numbers below in figures\n\n1. Three million, seventeen thousand and twenty-one\n2. One billion, thirty-two million, four hundred and fifty thousand and eleven\n\n3. Sixteen billion, two hundred and fifteen million, five hundred and two\n\nthousand, one hundred and fifty-three.\n4. Ten million, forty thousand, eight hundred and thirty-five.',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color: Colors.black,
-                                              fontSize: 18.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.normal,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                theme: const ExpandableThemeData(
-                                  tapHeaderToExpand: true,
-                                  tapBodyToExpand: false,
-                                  tapBodyToCollapse: false,
-                                  headerAlignment:
-                                      ExpandablePanelHeaderAlignment.center,
-                                  hasIcon: true,
-                                ),
+              ),
+              Align(
+                alignment: const AlignmentDirectional(0.0, 1.0),
+                child: Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      context.pushNamed('Basic7Solutions');
+                    },
+                    text: 'View Suggested Solutions',
+                    icon: const Icon(
+                      Icons.remove_red_eye_outlined,
+                      size: 15.0,
+                    ),
+                    options: FFButtonOptions(
+                      height: 52.0,
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFF21A351),
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                                letterSpacing: 0.0,
                               ),
-                            ),
-                          ),
-                        ),
+                      elevation: 3.0,
+                      borderSide: const BorderSide(
+                        color: Colors.transparent,
+                        width: 1.0,
                       ),
-                    ],
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
                   ),
                 ),
-                Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
-                          child: Container(
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: ExpandableNotifier(
-                              controller:
-                                  _model.expandableExpandableController2,
-                              child: ExpandablePanel(
-                                header: Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 0.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Fractions & Decimals',
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .displaySmall
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 15.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                collapsed: Container(
-                                  width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 40.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                  ),
-                                  child: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Tap to Open the quiz',
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color: const Color(0x8A000000),
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                expanded: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Text(
-                                        '1. Write each of the following as decimals:\n(a) 5/100\n(b) 17/10\n(c) 87/1000\n(d) 9/100\n(e) 81/1000\n\n(9 222/100\n\n1. Express each of the following as decimals:\n(a) 17/5\n(b) 231/2\n(9 1297/4\n(a) 347/50\nle) 1234/25',
-                                        textAlign: TextAlign.justify,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Open Sans',
-                                              color: Colors.black,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                theme: const ExpandableThemeData(
-                                  tapHeaderToExpand: true,
-                                  tapBodyToExpand: false,
-                                  tapBodyToCollapse: false,
-                                  headerAlignment:
-                                      ExpandablePanelHeaderAlignment.center,
-                                  hasIcon: true,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
-                          child: Container(
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: ExpandableNotifier(
-                              controller:
-                                  _model.expandableExpandableController3,
-                              child: ExpandablePanel(
-                                header: Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 0.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Multiplication & Division',
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .displaySmall
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 15.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                collapsed: Container(
-                                  width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 40.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                  ),
-                                  child: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Tap to Open the quiz',
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color: const Color(0x8A000000),
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                expanded: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Text(
-                                        '1. The monthly salary of a man is GH₵2,625. What is his annual income by salary?\n\n2. A chair costs GH₵452 and a table costs GH₵1,750. What will be the cost of 15 chairs and 30 tables?\n\n3. A bus can hold 108 passengers. If there are 12 rows of seats on the bus,\nhow many seats are in each row?\n\n4. Mark baked 195 cookies and divided them equally into 13 packs. How\nmany cookies did Mark put in each packet?',
-                                        textAlign: TextAlign.justify,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Open Sans',
-                                              color: Colors.black,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                theme: const ExpandableThemeData(
-                                  tapHeaderToExpand: true,
-                                  tapBodyToExpand: false,
-                                  tapBodyToCollapse: false,
-                                  headerAlignment:
-                                      ExpandablePanelHeaderAlignment.center,
-                                  hasIcon: true,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 10.0, 0.0),
-                          child: Container(
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: ExpandableNotifier(
-                              controller:
-                                  _model.expandableExpandableController4,
-                              child: ExpandablePanel(
-                                header: Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 0.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Ratio & Proportion',
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .displaySmall
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 15.0,
-                                            letterSpacing: 0.0,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                collapsed: Container(
-                                  width: MediaQuery.sizeOf(context).width * 1.0,
-                                  height: 40.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                  ),
-                                  child: Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 8.0, 0.0, 0.0),
-                                      child: Text(
-                                        'Tap to Open the quiz',
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Readex Pro',
-                                              color: const Color(0x8A000000),
-                                              letterSpacing: 0.0,
-                                            ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                expanded: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Text(
-                                        '1. The ratio of 8 books to 20 books is\n\n\ta) 2:5 (B) 5:2 (© 4:5 (D) 5:4\n\n2. The ratio of the number of sides of a square to the number of edges  of a cube is\n\n\ta) 1:2 (B) 3:2  C) 4:1 D) 1:3\n\n3. A picture is 60cm wide and 1.8m long. The ratio of its width to its perimeter in lowest form is\n\n\ta) 1:2 B) 1:3 C) 1:4 D) 1:8\n\n4. Neelam\'s annual income is GHC288000. Her annual savings amount to GHC 36000. Theratio of her savings to her expenditure is\n\n\t(a) 1:8 (B) 1:7 (C) 1:6 (D) 1:5\n\n5. Mathematics textbook for Class VI has 320 pages. The chapter  ‘symmetry’ runs from page 261 to page 272. The ratio of the number of pages of this chapter to the total number of pages of the book is\n\n\t(A) 11:320 (B) 3:40  (C) 3:80 (D) 272 : 320\n\n',
-                                        textAlign: TextAlign.justify,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily: 'Open Sans',
-                                              color: Colors.black,
-                                              fontSize: 15.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                theme: const ExpandableThemeData(
-                                  tapHeaderToExpand: true,
-                                  tapBodyToExpand: false,
-                                  tapBodyToCollapse: false,
-                                  headerAlignment:
-                                      ExpandablePanelHeaderAlignment.center,
-                                  hasIcon: true,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
