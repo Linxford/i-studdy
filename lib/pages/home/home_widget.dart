@@ -129,11 +129,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         height: 100.0,
                         decoration: BoxDecoration(
                           color: FlutterFlowTheme.of(context).alternate,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
-                              color: FlutterFlowTheme.of(context).tertiary,
-                              offset: const Offset(
+                              color: Color(0xFF071952),
+                              offset: Offset(
                                 0.0,
                                 4.0,
                               ),
@@ -189,7 +189,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFF17786D),
+                        color: const Color(0xFF071952),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',

@@ -1,5 +1,4 @@
 // Export pages
-export '/lessons/lessons_widget.dart' show LessonsWidget;
 export '/pages/basic4/b4_lessons/b4_lessons_widget.dart' show B4LessonsWidget;
 export '/pages/basic5/b5_lessons/b5_lessons_widget.dart' show B5LessonsWidget;
 export '/pages/basic6/b6_lessons/b6_lessons_widget.dart' show B6LessonsWidget;
@@ -60,3 +59,4 @@ export '/pages/basic6/basic6_solutions/basic6_solutions_widget.dart'
     show Basic6SolutionsWidget;
 export '/pages/basic7/basic7_solutions/basic7_solutions_widget.dart'
     show Basic7SolutionsWidget;
+export '/lessons/lessons_widget.dart' show LessonsWidget;

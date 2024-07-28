@@ -144,7 +144,7 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                context.pushNamed('Basic6Content');
+                                context.pushNamed('B7Content');
                               },
                               child: Icon(
                                 Icons.arrow_circle_left_outlined,
