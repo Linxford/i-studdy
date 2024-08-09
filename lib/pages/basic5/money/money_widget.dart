@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'money_model.dart';
@@ -44,9 +43,7 @@ class _MoneyWidgetState extends State<MoneyWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -228,7 +225,7 @@ class _MoneyWidgetState extends State<MoneyWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            'Money is something that we use to buy our basic needs, shopping, etc. We give money in return for purchasing several items or any other things. Money is referred to as a medium of exchange, such as notes and coins, for commodities and services.\n\nThe Ghana, Cedis (currency symbol (₵)) is the national currency of Ghana, and all the transactions are done by utilising the country’s system of money, i.e. the currency. Money is something that we all interact with daily, and we fall back on our maths skills to take care of money reliably.\n\nMoney can be used as a medium of exchange, such as coins, notes, etc., to pay for services and commodities. When you purchase something, in return, you have to pay for anything like chocolates, cake, fruits, food, football, bat, racket, house, or anything that can be used for selling or buying, and we exchange money for those things. \n\nMoney is used in the form of paper or coins and is usually issued by a government and generally used its face value as a method of payment for things. Economists determined money as the widely accepted means of payment which is also used for purchasing goods and services. ',
+                                            'Money is something that we use to buy our basic needs, shopping, etc. We give money in return for purchasing several items or any other things. Money is referred to as a medium of exchange, such as notes and coins, for commodities and services.\n\nThe Ghana, Cedis (currency symbol (C)) is the national currency of Ghana, and all the transactions are done by utilising the country’s system of money, i.e. the currency. Money is something that we all interact with daily, and we fall back on our maths skills to take care of money reliably.\n\nMoney can be used as a medium of exchange, such as coins, notes, etc., to pay for services and commodities. When you purchase something, in return, you have to pay for anything like chocolates, cake, fruits, food, football, bat, racket, house, or anything that can be used for selling or buying, and we exchange money for those things. \n\nMoney is used in the form of paper or coins and is usually issued by a government and generally used its face value as a method of payment for things. Economists determined money as the widely accepted means of payment which is also used for purchasing goods and services. ',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -508,7 +505,7 @@ class _MoneyWidgetState extends State<MoneyWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
-                                          '\nUse of Money in Maths and Life\nMathematics affects the financial decisions that we have to make every day in our lives. Math is a part of our everyday lives, from paying our bills to using the coupons at the grocery store. Number sense and a facility with mathematical concepts are very useful in banking. We use math for the purpose of budgeting, spending, saving, and investing.\n\nSolved Examples\nQ.1. Add GH₵13, GH₵ 25  and GH₵12 \n\nAnswer:\nExpress in numbers then later add the Currency to it\n=13 + 25 + 12\n=50\nTherefore the total is GH₵50.00\n\nQ.2. Sachin bought a book for GH₵ 59.25  and spent GH₵30.75  for lunch. He had one GH₵100  note. How much money does he have now?\n\nAns: We have,\nSachin purchased a book for =GH₵59.25\n\nThe amount he spent on lunch = GH₵30.75\n\nThe total amount spent GH₵59.25 + GH₵30.75\n=GH₵90.00\n\nNow, subtract to find the balance He had after spending the GH₵90 from the GH₵100\n\nTotal amount - Amount spent \n=100 - 90\n=10\nNow add the currency\n=GH₵10\n\nQ.3. The cost of a pen is GH₵29.50 . Find the cost of four pens?\nAns: One pen cost GH₵29.50 and four pens cost =?\nWe don\'t know the cost of four pens so we indicate it with question mark (?)\n\nHere we will multiply the amount by th numnber of pens \n= 29.50 × 4\n= 118.00\nThe cost of one pen is 29.50\n\nThe cost of four pens is ×4\n\nThe cost of four pens is 118.00\n\nHence, the cost of four pens is \n GH₵118.00\n\nQ.3. Ama bought a dress for GH₵75.50 and a pair of shoes for GH₵42.30. She had one GH₵200 note. How much money does she have now?\n\nAnswer:\nWe have:\n\nAma purchased a dress for: GH₵75.50\nThe amount she spent on shoes: GH₵42.30\nThe total amount spent:\n=𝐺𝐻₵75.50 + 𝐺𝐻₵42.30\n=GH₵75.50 + GH₵42.30\n=𝐺𝐻₵117.80\n=GH₵117.80',
+                                          '\nUse of Money in Maths and Life\nMathematics affects the financial decisions that we have to make every day in our lives. Math is a part of our everyday lives, from paying our bills to using the coupons at the grocery store. Number sense and a facility with mathematical concepts are very useful in banking. We use math for the purpose of budgeting, spending, saving, and investing.\n\nSolved Examples\nQ.1. Add GHC13, GHC 25  and GHC12 \n\nAnswer:\nExpress in numbers then later add the Currency to it\n=13 + 25 + 12\n=50\nTherefore the total is GHC50.00\n\nQ.2. Sachin bought a book for GHC 59.25  and spent GHC30.75  for lunch. He had one GHC100  note. How much money does he have now?\n\nAns: We have,\nSachin purchased a book for =GHC59.25\n\nThe amount he spent on lunch = GHC30.75\n\nThe total amount spent GHC59.25 + GHC30.75\n=GHC90.00\n\nNow, subtract to find the balance He had after spending the GH₵90 from the GHC100\n\nTotal amount - Amount spent \n=100 - 90\n=10\nNow add the currency\n=GHC10\n\nQ.3. The cost of a pen is GHC29.50 . Find the cost of four pens?\nAns: One pen cost GHC29.50 and four pens cost =?\nWe don\'t know the cost of four pens so we indicate it with question mark (?)\n\nHere we will multiply the amount by th numnber of pens \n= 29.50 × 4\n= 118.00\nThe cost of one pen is 29.50\n\nThe cost of four pens is ×4\n\nThe cost of four pens is 118.00\n\nHence, the cost of four pens is \n GHC118.00\n\nQ.3. Ama bought a dress for GHC75.50 and a pair of shoes for GHC42.30. She had one GHC200 note. How much money does she have now?\n\nAnswer:\nWe have:\n\nAma purchased a dress for: GHC75.50\nThe amount she spent on shoes: GHC42.30\nThe total amount spent:\n=𝐺𝐻C75.50 + 𝐺𝐻C42.30\n=GHC75.50 + GHC42.30\n=𝐺𝐻C117.80\n=GHC117.80',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -536,39 +533,6 @@ class _MoneyWidgetState extends State<MoneyWidget> {
                         ),
                       ),
                     ],
-                  ),
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, 1.0),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed('Basic5Quiz');
-                      },
-                      text: 'Test your Knowledge',
-                      options: FFButtonOptions(
-                        height: 52.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
                   ),
                 ),
               ],

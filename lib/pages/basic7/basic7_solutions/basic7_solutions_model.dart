@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 class Basic7SolutionsModel extends FlutterFlowModel<Basic7SolutionsWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController1;
 
@@ -27,7 +26,6 @@ class Basic7SolutionsModel extends FlutterFlowModel<Basic7SolutionsWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     expandableExpandableController1.dispose();
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();

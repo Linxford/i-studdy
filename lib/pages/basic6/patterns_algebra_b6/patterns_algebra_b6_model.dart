@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 class PatternsAlgebraB6Model extends FlutterFlowModel<PatternsAlgebraB6Widget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController1;
 
@@ -30,7 +29,6 @@ class PatternsAlgebraB6Model extends FlutterFlowModel<PatternsAlgebraB6Widget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     expandableExpandableController1.dispose();
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();

@@ -47,9 +47,7 @@ class _Basic5SotuionsWidgetState extends State<Basic5SotuionsWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -648,7 +646,7 @@ class _Basic5SotuionsWidgetState extends State<Basic5SotuionsWidget> {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 5.0, 0.0),
                                           child: Text(
-                                            '1. The cost of a notebook is GH₵12.75. Find the cost of five notebooks.\n\nSolution:\nOne notebook costs GH₵12.75 and five notebooks cost:\n=12.75 × 5\n=63.75\nThe cost of one notebook is GH₵12.75. Therefore, the cost of five notebooks is:\n=𝐺𝐻₵63.75\n\n\n2.  Kofi has GH₵150. He buys a bicycle for GH₵89.50 and a helmet for GH₵25.75. How much money does he have left?\n\nAnswer:\nWe have:\n\nKofi purchased a bicycle for: GH₵89.50\nThe amount he spent on a helmet: GH₵25.75\nThe total amount spent:\n=GH₵89.50 + GH₵25.75\n=GH₵115.25\n\nNow, subtract to find the balance he had after spending the GH₵115.25 from the GH₵150:\nTotal amount−Amount spent\n=150−115.25\n=34.75\nNow add the currency:\n=𝐺𝐻₵34.75\n=GH₵34.75\n\n3. The cost of a chair is GH₵45.80. Find the cost of three chairs.\n\nAnswer:\nOne chair costs GH₵45.80 and three chairs cost:\n=45.80×3\n=137.40\nThe cost of one chair is GH₵45.80. Therefore, the cost of three chairs is:\n=GH₵137.40\n\n4. Ama bought a dress for GH₵75.50 and a pair of shoes for GH₵42.30. She had one GH₵200 note. How much money does she have now?\n\nAnswer:\nWe have:\n\nAma purchased a dress for: GH₵75.50\nThe amount she spent on shoes: GH₵42.30\nThe total amount spent:\n=𝐺𝐻₵75.50 + 𝐺𝐻₵42.30\n=GH₵75.50 + GH₵42.30\n=𝐺𝐻₵117.80\n=GH₵117.80',
+                                            '1. The cost of a notebook is GHC12.75. Find the cost of five notebooks.\n\nSolution:\nOne notebook costs GHC12.75 and five notebooks cost:\n=12.75 × 5\n=63.75\nThe cost of one notebook is GHC12.75. Therefore, the cost of five notebooks is:\n=𝐺𝐻C63.75\n\n\n2.  Kofi has GHC150. He buys a bicycle for GHC89.50 and a helmet for GHC25.75. How much money does he have left?\n\nAnswer:\nWe have:\n\nKofi purchased a bicycle for: GHC89.50\nThe amount he spent on a helmet: GHC25.75\nThe total amount spent:\n=GHC89.50 + GHC25.75\n=GHC115.25\n\nNow, subtract to find the balance he had after spending the GHC115.25 from the GHC150:\nTotal amount−Amount spent\n=150−115.25\n=34.75\nNow add the currency:\n=𝐺𝐻C34.75\n=GHC34.75\n\n3. The cost of a chair is GHC45.80. Find the cost of three chairs.\n\nAnswer:\nOne chair costs GHC45.80 and three chairs cost:\n=45.80×3\n=137.40\nThe cost of one chair is GHC45.80. Therefore, the cost of three chairs is:\n=GHC137.40\n\n4. Ama bought a dress for GHC75.50 and a pair of shoes for GHC42.30. She had one GHC200 note. How much money does she have now?\n\nAnswer:\nWe have:\n\nAma purchased a dress for: GHC75.50\nThe amount she spent on shoes: GHC42.30\nThe total amount spent:\n=𝐺𝐻C75.50 + 𝐺𝐻C42.30\n=GHC75.50 + GHC42.30\n=𝐺𝐻C117.80\n=GHC117.80',
                                             textAlign: TextAlign.justify,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium

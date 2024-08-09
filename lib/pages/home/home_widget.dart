@@ -58,9 +58,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -115,7 +113,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         child: Image.asset(
                           'assets/images/pngegg.png',
                           width: 300.0,
-                          height: 356.0,
+                          height: 310.0,
                           fit: BoxFit.contain,
                         ),
                       ).animateOnPageLoad(
@@ -172,7 +170,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                   alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(50.0, 50.0, 50.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(50.0, 30.0, 50.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed('Dashboard');
@@ -189,7 +187,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFF071952),
+                        color: FlutterFlowTheme.of(context).success,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   fontFamily: 'Readex Pro',
@@ -203,7 +201,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(30.0),
                       ),
                     ).addWalkthrough(
                       buttonWwpujil0,

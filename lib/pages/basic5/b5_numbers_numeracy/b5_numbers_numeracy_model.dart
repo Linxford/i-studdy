@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 class B5NumbersNumeracyModel extends FlutterFlowModel<B5NumbersNumeracyWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController;
 
@@ -15,7 +14,6 @@ class B5NumbersNumeracyModel extends FlutterFlowModel<B5NumbersNumeracyWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     expandableExpandableController.dispose();
   }
 }

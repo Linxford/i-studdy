@@ -8,7 +8,6 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
   ///  State fields for stateful widgets in this page.
 
   TutorialCoachMark? startController;
-  final unfocusNode = FocusNode();
 
   @override
   void initState(BuildContext context) {}
@@ -16,6 +15,5 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
   @override
   void dispose() {
     startController?.finish();
-    unfocusNode.dispose();
   }
 }

@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 class Basic5QuizModel extends FlutterFlowModel<Basic5QuizWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController1;
 
@@ -30,7 +29,6 @@ class Basic5QuizModel extends FlutterFlowModel<Basic5QuizWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     expandableExpandableController1.dispose();
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();
