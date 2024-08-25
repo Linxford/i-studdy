@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'b4_lessons_widget.dart' show B4LessonsWidget;
+import 'b7quizzespage_widget.dart' show B7quizzespageWidget;
 import 'package:flutter/material.dart';
 
-class B4LessonsModel extends FlutterFlowModel<B4LessonsWidget> {
+class B7quizzespageModel extends FlutterFlowModel<B7quizzespageWidget> {
   @override
   void initState(BuildContext context) {}
 

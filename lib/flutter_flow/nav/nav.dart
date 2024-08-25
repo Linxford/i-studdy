@@ -57,9 +57,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : const DashboardWidget(),
         ),
         FFRoute(
-          name: 'B4Lessons',
-          path: '/b4Lessons',
-          builder: (context, params) => const B4LessonsWidget(),
+          name: 'B5quizzespage',
+          path: '/b5quizzespage',
+          builder: (context, params) => const B5quizzespageWidget(),
         ),
         FFRoute(
           name: 'B5Lessons',
@@ -235,6 +235,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Lessons',
           path: '/lessons',
           builder: (context, params) => const LessonsWidget(),
+        ),
+        FFRoute(
+          name: 'B6quizzespage',
+          path: '/b6quizzespage',
+          builder: (context, params) => const B6quizzespageWidget(),
+        ),
+        FFRoute(
+          name: 'B7quizzespage',
+          path: '/b7quizzespage',
+          builder: (context, params) => const B7quizzespageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

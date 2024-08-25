@@ -250,6 +250,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                                       headerAlignment:
                                           ExpandablePanelHeaderAlignment.center,
                                       hasIcon: true,
+                                      expandIcon: Icons.arrow_drop_down_sharp,
+                                      collapseIcon: Icons.arrow_drop_up_sharp,
                                     ),
                                   ),
                                 ),
@@ -354,6 +356,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                                       headerAlignment:
                                           ExpandablePanelHeaderAlignment.center,
                                       hasIcon: true,
+                                      expandIcon: Icons.arrow_drop_down_sharp,
+                                      collapseIcon: Icons.arrow_drop_up_sharp,
                                     ),
                                   ),
                                 ),
@@ -459,6 +463,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                                       headerAlignment:
                                           ExpandablePanelHeaderAlignment.center,
                                       hasIcon: true,
+                                      expandIcon: Icons.arrow_drop_down_sharp,
+                                      collapseIcon: Icons.arrow_drop_up_sharp,
                                     ),
                                   ),
                                 ),
@@ -564,6 +570,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                                       headerAlignment:
                                           ExpandablePanelHeaderAlignment.center,
                                       hasIcon: true,
+                                      expandIcon: Icons.arrow_drop_down_sharp,
+                                      collapseIcon: Icons.arrow_drop_up_sharp,
                                     ),
                                   ),
                                 ),
@@ -669,6 +677,8 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                                       headerAlignment:
                                           ExpandablePanelHeaderAlignment.center,
                                       hasIcon: true,
+                                      expandIcon: Icons.arrow_drop_down_sharp,
+                                      collapseIcon: Icons.arrow_drop_up_rounded,
                                     ),
                                   ),
                                 ),
@@ -678,43 +688,45 @@ class _Basic7QuizWidgetState extends State<Basic7QuizWidget> {
                         ],
                       ),
                     ),
-                  ],
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(0.0, 1.0),
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      context.pushNamed('Basic7Solutions');
-                    },
-                    text: 'View Suggested Solutions',
-                    icon: const Icon(
-                      Icons.remove_red_eye_outlined,
-                      size: 15.0,
-                    ),
-                    options: FFButtonOptions(
-                      height: 52.0,
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: const Color(0xFF21A351),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: const BorderSide(
-                        color: Colors.transparent,
-                        width: 1.0,
+                    Align(
+                      alignment: const AlignmentDirectional(0.0, 1.0),
+                      child: Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed('Basic7Solutions');
+                          },
+                          text: 'View Suggested Solutions',
+                          icon: const Icon(
+                            Icons.remove_red_eye_outlined,
+                            size: 15.0,
+                          ),
+                          options: FFButtonOptions(
+                            height: 52.0,
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                24.0, 0.0, 24.0, 0.0),
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: const Color(0xFF21A351),
+                            textStyle: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
+                            elevation: 3.0,
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
                     ),
-                  ),
+                  ],
                 ),
               ),
             ],

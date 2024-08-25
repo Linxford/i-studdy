@@ -148,7 +148,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                           const EdgeInsetsDirectional.fromSTEB(19.0, 16.0, 19.0, 0.0),
                       child: Container(
                         width: double.infinity,
-                        height: 159.0,
+                        height: 100.0,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
@@ -177,7 +177,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                   fontFamily: 'Readex Pro',
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  fontSize: 30.0,
+                                  fontSize: 25.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -225,7 +225,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                     ),
                     Container(
                       width: double.infinity,
-                      height: 500.0,
+                      height: 450.0,
                       decoration: BoxDecoration(
                         color: const Color(0xFFF6F6F6),
                         borderRadius: BorderRadius.circular(30.0),
@@ -241,7 +241,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                   21.0, 20.0, 21.0, 20.0),
                               child: Container(
                                 width: double.infinity,
-                                height: 106.0,
+                                height: 80.0,
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                   boxShadow: [
@@ -288,8 +288,8 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                               context.pushNamed('B5Lessons');
                                             },
                                             child: Container(
-                                              width: 80.0,
-                                              height: 80.0,
+                                              width: 50.0,
+                                              height: 50.0,
                                               decoration: const BoxDecoration(
                                                 color: Color(0xFFFF9F35),
                                                 borderRadius: BorderRadius.only(
@@ -372,7 +372,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                   21.0, 0.0, 21.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                height: 106.0,
+                                height: 80.0,
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                   boxShadow: [
@@ -419,8 +419,8 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                               context.pushNamed('B5Lessons');
                                             },
                                             child: Container(
-                                              width: 80.0,
-                                              height: 80.0,
+                                              width: 50.0,
+                                              height: 50.0,
                                               decoration: const BoxDecoration(
                                                 color: Color(0xFF4191D4),
                                                 borderRadius: BorderRadius.only(
@@ -439,7 +439,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
-                                                size: 75.0,
+                                                size: 50.0,
                                               ),
                                             ),
                                           ),
@@ -456,7 +456,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'QUIZ & ASSIGNMENT',
+                                                'ASSESSMENT',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -483,7 +483,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                   21.0, 21.0, 21.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                height: 106.0,
+                                height: 80.0,
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                   boxShadow: [
@@ -530,8 +530,8 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                               context.pushNamed('B5Lessons');
                                             },
                                             child: Container(
-                                              width: 80.0,
-                                              height: 80.0,
+                                              width: 50.0,
+                                              height: 50.0,
                                               decoration: const BoxDecoration(
                                                 color: Color(0xFF14A130),
                                                 borderRadius: BorderRadius.only(
@@ -550,7 +550,7 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
-                                                size: 70.0,
+                                                size: 40.0,
                                               ),
                                             ),
                                           ),
@@ -568,6 +568,129 @@ class _B5ContentWidgetState extends State<B5ContentWidget> {
                                             children: [
                                               Text(
                                                 'ANSWERS',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Readex Pro',
+                                                          fontSize: 18.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  21.0, 21.0, 21.0, 0.0),
+                              child: Container(
+                                width: double.infinity,
+                                height: 80.0,
+                                decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 4.0,
+                                      color: Color(0x33000000),
+                                      offset: Offset(
+                                        0.0,
+                                        2.0,
+                                      ),
+                                    )
+                                  ],
+                                  borderRadius: BorderRadius.only(
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0),
+                                    topLeft: Radius.circular(20.0),
+                                    topRight: Radius.circular(20.0),
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 1.0, 0.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('B5quizzespage');
+                                    },
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              context.pushNamed('B5Lessons');
+                                            },
+                                            child: Container(
+                                              width: 50.0,
+                                              height: 50.0,
+                                              decoration: const BoxDecoration(
+                                                color: Color(0xFF9514A1),
+                                                borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                      Radius.circular(20.0),
+                                                  bottomRight:
+                                                      Radius.circular(20.0),
+                                                  topLeft:
+                                                      Radius.circular(20.0),
+                                                  topRight:
+                                                      Radius.circular(20.0),
+                                                ),
+                                              ),
+                                              child: InkWell(
+                                                splashColor: Colors.transparent,
+                                                focusColor: Colors.transparent,
+                                                hoverColor: Colors.transparent,
+                                                highlightColor:
+                                                    Colors.transparent,
+                                                onTap: () async {
+                                                  context.pushNamed(
+                                                      'B5quizzespage');
+                                                },
+                                                child: Icon(
+                                                  Icons
+                                                      .add_to_home_screen_outlined,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
+                                                  size: 40.0,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  20.0, 15.0, 0.0, 15.0),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'QUIZ',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
